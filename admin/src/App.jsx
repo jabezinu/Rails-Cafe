@@ -6,12 +6,14 @@ import Employee from './pages/Employee'
 
 const App = () => {
   return (
-    <div>
+    <div className="flex min-h-screen bg-gray-100">
       <Sidebar />
-      <Routes>
-        <Route path="/" element={<CataMenu />} />
-        <Route path="/employee" element={<Employee />} />
-      </Routes>
+      <main className="ml-64 flex-1 p-8">
+        <Routes>
+          <Route path="/" element={<CataMenu />} />
+          <Route path="/employee" element={<Employee />} />
+        </Routes>
+      </main>
     </div>
   )
 }
